@@ -35,14 +35,14 @@ steps:
     entrypoint: '/bin/sh'
     args:
       - '-c'
-      - 'if [ -n "$(git status -uno -s)" ]; then echo "git status is not clean"; false; fi && nbdev_clean_nbs && git status -s # display the status to see which nbs need cleaning up && if [ -n "$(git status -uno -s)" ]; then echo -e "!!! Detected unstripped out notebooks\n!!!Remember to run nbdev_install_git_hooks"; false; fi'
+      - "if [ -n '$(git status -uno -s)'' ]; then echo 'git status is not clean'; false; fi && nbdev_clean_nbs && git status -s # display the status to see which nbs need cleaning up && if [ -n '$(git status -uno -s)' ]; then echo -e '!!! Detected unstripped out notebooks\n!!!Remember to run nbdev_install_git_hooks'; false; fi"
     waitFor: 'install'
   - id: 'Check if there is no diff library/notebooks'
     name: 'python:3.7-slim'
     entrypoint: '/bin/sh'
     args:
       - '-c'
-      - 'if [ -n "$(nbdev_diff_nbs)" ]; then echo -e "!!! Detected difference between the notebooks and the library"; false; fi'
+      - "if [ -n '$(nbdev_diff_nbs)' ]; then echo -e '!!! Detected difference between the notebooks and the library'; false; fi"
     waitFor: 'install'
   - id: 'Check if there is no diff library/notebooks'
     name: 'python:3.7-slim'
