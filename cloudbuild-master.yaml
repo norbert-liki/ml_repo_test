@@ -1,6 +1,6 @@
 steps:
   # Install library  
-  . id: install
+  - id: install
     name: 'python:3.7-slim'
     entrypoint: /bin/sh
     args:
