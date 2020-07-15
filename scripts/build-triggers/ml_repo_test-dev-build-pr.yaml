@@ -1,0 +1,11 @@
+description: build ml_repo_test pull requests
+filename: cloudbuild-pr.yaml
+github:
+  installationId: '5391033'
+  name: ml_repo_test
+  owner: aliz-ai
+  pullRequest:
+    branch: .*
+includedFiles:
+- ml_repo_test/*
+name: ml_repo_test-dev-build-pr

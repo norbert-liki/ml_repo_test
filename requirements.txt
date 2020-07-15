@@ -1,0 +1,14 @@
+flake8
+ipython
+jupyter
+matplotlib
+nbdev
+numpy
+pandas
+pip
+pre-commit
+python-dotenv
+scikit-learn
+setuptools
+wheel
+-e .

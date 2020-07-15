@@ -1,0 +1,9 @@
+description: ml_repo_test dev build
+filename: cloudbuild-dev.yaml
+triggerTemplate:
+  branchName: ^dev$
+  projectId: ml_repo_test
+  repoName: github_ml_repo_test
+includedFiles:
+- ml_repo_test/*
+name: ml_repo_test-build-dev

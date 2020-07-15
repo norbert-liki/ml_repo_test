@@ -1,0 +1,11 @@
+description: ml_repo_test master build
+filename: cloudbuild.yaml
+github:
+  installationId: '5391033'
+  name: ml_repo_test
+  owner: aliz-ai
+  push:
+    branch: ^master$
+includedFiles:
+- ml_repo_test/*
+name: ml_repo_test-dev-build-master
