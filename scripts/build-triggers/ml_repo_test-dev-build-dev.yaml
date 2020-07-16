@@ -6,4 +6,4 @@ triggerTemplate:
   repoName: github_ml_repo_test
 includedFiles:
 - ml_repo_test/*
-name: ml_repo_test-build-dev
+name: ml-repo-test-build-dev
