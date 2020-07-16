@@ -2,9 +2,9 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {}
+index = {"add": "00_core.ipynb"}
 
-modules = []
+modules = ["commons/alma.py"]
 
 doc_url = "https://noliki.github.io/ml_repo_test/"
 
