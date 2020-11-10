@@ -1,11 +1,9 @@
 description: ml_repo_test master build
 filename: cloudbuild.yaml
-github:
-  installationId: '5391033'
-  name: ml_repo_test
-  owner: aliz-ai
-  push:
-    branch: ^master$
+triggerTemplate:
+  branchName: ^master$
+  projectId: norbert-liki-sandbox
+  repoName: github_ml_repo_test
 includedFiles:
 - ml_repo_test/*
-name: ml_repo_test-dev-build-master
+name: ml-repo-test-dev-build-master
